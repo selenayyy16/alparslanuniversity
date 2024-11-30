@@ -1,0 +1,30 @@
+package javaprojeler;
+
+import java.util.Scanner;
+
+public class odev1
+{
+    public static void main(String [] args)
+    {
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Bir n değeri gir: ");
+        int n = giris.nextInt();
+        int t = 0;
+
+
+        for (int i = 1; i <=n; i++)
+            t += i;
+
+        {
+            System.out.println("1'den " +n+ " 'e kadar olan sayıların toplamı: " +t);
+
+        }
+
+
+
+    }
+
+
+
+
+}
