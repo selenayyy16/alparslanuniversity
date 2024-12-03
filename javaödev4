@@ -1,0 +1,28 @@
+package javaprojeler;
+
+import java.util.Scanner;
+
+public class odev4
+{
+
+    public static void main(String [] args)
+    {
+        System.out.println("Bu program sayesinde kare hesaplaması yapabilirsiniz");
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Kaç sayı gireceksin?");
+        int n = giris.nextInt();
+        System.out.println(+n+ " tane sayı gireceksin.");
+
+        int toplam = 0;
+
+        for (int i = 1; i <=n; i++)
+        {
+            System.out.println("Sayı gir: ");
+            int sayi = giris.nextInt();
+            toplam += sayi * sayi; //  Sayının karesi alınır
+
+        }
+        System.out.println("Sayıların karelerinin toplamı: " + toplam);
+
+    }
+}
